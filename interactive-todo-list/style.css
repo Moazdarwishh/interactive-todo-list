@@ -6,7 +6,7 @@ body{
     margin-top: 80px;
 }
 
-/* Bigger container */
+
 .container{
     background: white;
     padding: 40px;
@@ -20,7 +20,7 @@ h1{
     font-size: 30px;
 }
 
-/* Input area */
+
 .input-section{
     display: flex;
     gap: 10px;
@@ -40,7 +40,7 @@ button{
     border-radius: 6px;
 }
 
-/* Task list */
+
 ul{
     list-style: none;
     padding: 0;
@@ -56,25 +56,25 @@ li{
     font-size: 18px;
 }
 
-/* Completed task */
+
 .completed{
     text-decoration: line-through;
     color: gray;
 }
 
-/* Done button */
+
 .done-btn{
     background-color: green;
     color: white;
 }
 
-/* Delete button */
+
 .delete-btn{
     background-color: red;
     color: white;
 }
 
-/* Button group */
+
 .task-buttons{
     display: flex;
     gap: 6px;

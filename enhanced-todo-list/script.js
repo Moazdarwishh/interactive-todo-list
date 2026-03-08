@@ -45,7 +45,7 @@ function renderTasks(){
 
     let filtered = [...tasks];
 
-    /* FILTER */
+
     if(filterSelect.value === "completed"){
         filtered = filtered.filter(t => t.completed);
     }
@@ -54,7 +54,7 @@ function renderTasks(){
         filtered = filtered.filter(t => !t.completed);
     }
 
-    /* SORT */
+  
     if(sortSelect.value === "alphabet"){
         filtered.sort((a,b) => a.description.localeCompare(b.description));
     }
@@ -80,7 +80,7 @@ function renderTasks(){
         const btnGroup = document.createElement("div");
         btnGroup.className = "task-buttons";
 
-        /* DONE BUTTON */
+        
         const doneBtn = document.createElement("button");
         doneBtn.innerHTML = "✔";
         doneBtn.className = "done-btn";
@@ -91,7 +91,7 @@ function renderTasks(){
             renderTasks();
         };
 
-        /* EDIT BUTTON */
+      
         const editBtn = document.createElement("button");
         editBtn.innerHTML = "✏️";
 
@@ -106,7 +106,7 @@ function renderTasks(){
             }
         };
 
-        /* DELETE BUTTON */
+    
         const delBtn = document.createElement("button");
         delBtn.innerHTML = "❌";
         delBtn.className = "delete-btn";
